@@ -18,5 +18,5 @@ Quando(/^eu clicar em Enviar$/) do
 end
 
 Então(/^o questionário será finalizado com a mensagem "([^"]*)"$/) do |message|
-  expect(page).to have_content(message)
+  formulario.valida_formulario(message)
 end

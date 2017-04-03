@@ -55,6 +55,8 @@ class Formulario < SitePrism::Page
 		save_btn.click
 	end
 
-
+	def valida_formulario(message)
+	 assert_text message
+    end
 
 end	
